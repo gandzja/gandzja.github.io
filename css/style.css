@@ -24,14 +24,14 @@ header{
   flex-wrap: wrap;
   align-content: space-between;
   align-items: center;
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 .header__block-photo{
   width: 50%;
 }
 .header__block-about_me {
   width: 50%;
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 .title {
   text-transform: uppercase;
@@ -79,8 +79,8 @@ header{
 .photo {
   position: relative;
   z-index: 100;
-  /* margin: 53px 0 0 70px; */
-  margin: 0 0 45px 70px;
+  margin: 53px 0 0 70px;
+  /* margin: 0 0 45px 70px; */
 }
 img {
   max-width: 350px;
@@ -124,15 +124,20 @@ a:hover {
 .block_text_aboutMe {
   padding-top: 50px;
 }
-main {
+.block_wrap {
   display: flex;
   flex-direction: row;
   -webkit-justify-content: space-between;
           justify-content: space-between;
+  align-content: space-between;
+  align-items: flex-start;
+}
+.block_wrap:last-child {
+  padding-bottom: 60px;
 }
 .block_text {
   flex-basis: 45%;
-  padding-bottom: 60px;
+  
 }
 h2 {
   font-weight: bold;
@@ -140,7 +145,7 @@ h2 {
   text-transform: uppercase;
   color: #614582;
   line-height: 64px;
-  padding-top: 50px;
+  padding: 50px 0 25px;
 }
 .job {
   border-left: 6px solid #614582;
@@ -185,9 +190,6 @@ h2 {
 }
 
 @media (max-width: 1319px) {
-  .photo {
-    margin: 0 0 40px 70px;
-  }
   .data-job {
     top: 18px;
   }
@@ -199,7 +201,7 @@ h2 {
     padding: 0 80px;
   }
   .header__block-about_me {
-    padding-top: 30px;
+    /* padding-top: 30px; */
   }
   .title:first-child {
     font-size: 18px;
@@ -225,6 +227,9 @@ h2 {
     left: 110px;
     top: 255px;
   }
+  .photo{
+    margin: 0 0 5px 70px;
+  }
   img {
     max-width: 250px;
   }
@@ -243,7 +248,7 @@ h2 {
     margin-bottom: 0;
   }
   .block_text_aboutMe {
-    padding-top: 20px;
+    padding-top: 0;
   }
   .job-title-container {
     padding-left: 65px;
@@ -266,19 +271,14 @@ h2 {
     width: 100%;
     padding-top: 70px;
   }
-  main {
-    display: flex;
+  .photo {
+    margin: 53px 0 0 70px;
+  }
+  .block_wrap {
     flex-direction: column;
-  }
-  .block_text {
-    padding-bottom: 0;
-  }
-  .block_text:last-child {
-    padding-bottom: 30px;
   }
   .data-job {
     top: 3px;
-    /* left: -52px; */
   }
   .icon_hs {
     width: 5rem;
@@ -305,7 +305,7 @@ h2 {
     top: 153px;
   }
   .photo {
-    margin: -24px 0 0 48px;
+    margin: 24px 0 0 48px;
   }
   img {
     max-width: 200px;
@@ -334,9 +334,6 @@ h2 {
     top: 70px;
     left: -38px;
   }
-  .icon_hs {
-    width: 5rem;
-  }
 }
 
 @media (max-width:375px) {
@@ -355,7 +352,7 @@ h2 {
     top: 104px;
   }
   .photo {
-    margin: -24px 0 0 70px;
+    margin: 24px 0 0 70px;
   }
   img {
     max-width: 150px;
@@ -408,15 +405,24 @@ h2 {
     margin: 0;
     padding: 0;
     }
-  header{
-    padding-top: 50px;
-  }
+    header{
+      display: flex;
+      flex-direction: row;
+      -webkit-justify-content: space-between;
+              justify-content: space-between;
+      flex-wrap: wrap;
+      align-content: space-between;
+      align-items: center;
+      padding-top: 0;
+    }
   .header__block-photo{
     width: 50%;
   }
   .header__block-about_me {
     width: 50%;
-    padding-top: 0;
+    position: relative;
+    top: -10px;
+    padding: 0;
   }
   .title {
     text-transform: uppercase;
@@ -448,16 +454,18 @@ h2 {
     width: 350px;
     height: 350px;
     background: #414042;
-    left: 10mm;
-    top: 10mm;
+    left: 8mm;
+    top: 8mm;
   }
   .greeting {
     font-size: 36pt;
-    left: 60px;
-    top: 185px;
+    left: 20px;
+    top: 160px;
 }
   .photo {
-    margin: 0 0 75px 168px;
+    top: -10px;
+    left: 100px;
+    margin: 0;
   }
   img {
     max-width: 250px;
@@ -468,14 +476,15 @@ h2 {
   .block_text_aboutMe {
     padding-top: 0;
   }
-  main {
+  .block_wrap {
     display: flex;
     flex-direction: row;
     -webkit-justify-content: space-between;
             justify-content: space-between;
+    align-content: space-between;
+    align-items: flex-start;
   }
-  .block_text {
-    flex-basis: 45%;
+  .block_wrap:last-child {
     padding-bottom: 0px;
   }
   h2 {
@@ -484,6 +493,7 @@ h2 {
     text-transform: uppercase;
     color: #302e31;
     line-height: 14pt;
+  padding: 30px 0 10px;
   }
   .job {
     border-left: 2px solid #302e31;
@@ -491,7 +501,7 @@ h2 {
     
   }
   .job-title-container {
-    padding: 0 0 5px 100px;
+    padding: 0 0 5px 50px;
   }
   .job-company, .institute, .traning-title {
     font-weight: bold;
@@ -510,12 +520,18 @@ h2 {
     font-size: 14pt;
     text-align: center;
     line-height: 50px;
-    top: 7px;
+    top: 30px;
     left: -25px;
   }
+  .svg-flex {
+    -webkit-justify-content: space-start;
+    justify-content: flex-start;
+    /* align-items: center; */
+    align-content: center;
+}
   .icon_hs {
     fill: #7f8180;
-    width: 2rem;
+    width: 4rem;
   }
 }
 
