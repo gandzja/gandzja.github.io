@@ -1,2 +1,4 @@
 # gandzja.github.io
-my first hosting
+my first portfolio
+
+
