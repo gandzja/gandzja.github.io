@@ -54,10 +54,10 @@ header{
   color: #77C79D;
 }
 .line{
-  border: none; 
-  background-color: #414042; 
-  color: #414042; 
-  height: 2px; 
+  border: none;
+  background-color: #414042;
+  color: #414042;
+  height: 2px;
 }
 .square {
   width: 450px;
@@ -137,7 +137,7 @@ a:hover {
 }
 .block_text {
   flex-basis: 45%;
-  
+
 }
 h2 {
   font-weight: bold;
@@ -148,32 +148,40 @@ h2 {
   padding: 50px 0 25px;
 }
 .job {
-  border-left: 6px solid #614582;
+  /* border-left: 6px solid #614582; */
   position: relative;
   min-height: 110px;
 }
 .job-title-container {
-  padding: 0 0 5px 100px;
+  border-left: 6px solid #614582;
+  padding: 0 0 5px 80px;
 }
 .job-company, .institute, .traning-title {
+  margin-bottom: 5px;
   font-weight: bold;
   line-height: 1.2em;
 }
-
+.job-title {
+  margin-bottom: 5px;
+}
+.position-job {
+  padding-top: 10px;
+}
 .data-job {
   position: absolute;
   background-color: #614582;
-  width: 100px;
-  height: 100px;
+  width: 127px;
+  height: 127px;
   border-radius: 50%;
   color: #FFFFFF;
   font-weight: bold;
   font-size: 36px;
   text-align: center;
-  line-height: 100px;
-  top: 3px;
-  left: -52px;
+  line-height: 127px;
+  top: 0px;
+  left: -60px;
 }
+
 .icon_hs {
   fill: #58c79a;
   width: 5rem;
@@ -189,16 +197,19 @@ h2 {
   align-content: space-around;
 }
 
-@media (max-width: 1319px) {
+/* @media (max-width: 1319px) {
   .data-job {
     top: 18px;
   }
-}
+} */
 
 @media (max-width:1024px) {
   .wrapper {
     margin: 100px;
     padding: 0 80px;
+  }
+  h2 {
+    line-height: 32px;
   }
   .header__block-about_me {
     /* padding-top: 30px; */
@@ -250,11 +261,15 @@ h2 {
   .block_text_aboutMe {
     padding-top: 0;
   }
-  .job-title-container {
+  /* .job-title-container {
     padding-left: 65px;
-  }
+  } */
   .data-job {
-    top: 27px;
+    top: 35px;
+    width: 110px;
+    height: 110px;
+    line-height: 110px;
+    left: -52px;
   }
 
   .icon_hs {
@@ -278,7 +293,11 @@ h2 {
     flex-direction: column;
   }
   .data-job {
-    top: 3px;
+    width: 127px;
+    height: 127px;
+    line-height: 127px;
+    top: 0px;
+    left: -60px;
   }
   .icon_hs {
     width: 5rem;
@@ -289,7 +308,8 @@ h2 {
   .wrapper {
     margin: 60px;
     padding: 0 40px;
-    }
+  }
+
   .header__block-about_me {
     padding-top: 40px;
   }
@@ -322,17 +342,20 @@ h2 {
   .position {
     font-size: 18px;
   }
-  
+
   .job-title-container {
     padding-left: 50px;
   }
   .data-job {
     width: 70px;
     height: 70px;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 70px;
     top: 70px;
-    left: -38px;
+    left: -32px;
+  }
+  .icon_hs {
+    width: 3rem;
   }
 }
 
@@ -376,18 +399,19 @@ h2 {
     font-size: 28px;
   }
   .job-title-container {
+    border-left: 4px solid #614582;
     padding-left: 28px;
   }
-  .job {
+  /* .job {
     border-left: 4px solid #614582;
-  }
+  } */
   .data-job {
     width: 40px;
     height: 40px;
     font-size: 14px;
     line-height: 40px;
     top: 48px;
-    left: -22px;
+    left: -19px;
   }
   .icon_hs {
     width: 2rem;
@@ -445,31 +469,31 @@ h2 {
     color: #7f8180;
   }
   .line{
-    border: none; 
-    background-color: #7f8180; 
-    color: #7f8180; 
-    height: 2px; 
+    border: none;
+    background-color: #7f8180;
+    color: #7f8180;
+    height: 2px;
   }
   .square {
-    width: 350px;
-    height: 350px;
+    width: 255pt;
+    height: 255pt;
     background: #414042;
-    left: 8mm;
-    top: 8mm;
+    left: -1mm;
+    top: -1mm;
   }
   .greeting {
     font-size: 36pt;
-    left: 20px;
-    top: 160px;
+    left: 3pt;
+    top: 120pt;
 }
   .photo {
-    top: -10px;
-    left: 100px;
+    top: -25pt;
+    left: 60pt;
     margin: 0;
   }
   img {
-    max-width: 250px;
-  }  
+    max-width: 190pt;
+  }
   .links__block {
     color: #302e31;
   }
@@ -493,35 +517,35 @@ h2 {
     text-transform: uppercase;
     color: #302e31;
     line-height: 14pt;
-  padding: 30px 0 10px;
+    padding: 20px 0 10px;
   }
   .job {
-    border-left: 2px solid #302e31;
+    /* border-left: 2px solid #302e31; */
     position: relative;
-    
+
   }
   .job-title-container {
+    border-left: 2px solid #302e31;
     padding: 0 0 5px 50px;
   }
   .job-company, .institute, .traning-title {
     font-weight: bold;
     line-height: 1.2em;
   }
-  
+
   .data-job {
     position: absolute;
-    border: 2px solid #302e31;
-    background-color: #302e31;
+    /* border: 2px solid #302e31; */
+    /* background-color: #302e31; */
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    color: #FFFFFF;
     font-weight: bold;
     font-size: 14pt;
     text-align: center;
     line-height: 50px;
-    top: 30px;
-    left: -25px;
+    top: 26px;
+    left: -24px;
   }
   .svg-flex {
     -webkit-justify-content: space-start;
@@ -531,9 +555,6 @@ h2 {
 }
   .icon_hs {
     fill: #7f8180;
-    width: 4rem;
+    width: 3rem;
   }
 }
-
-
-
