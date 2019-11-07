@@ -461,11 +461,14 @@ p.greeting {
 }
 .container {
   background-color: white;
+  border-radius: 56px;
+  box-shadow: inset -3px -4px 20px 0px #89d7ed, inset -20px -28px 15px 10px #fff;
 }
 .about-me {
   font-size: 1.2rem;
   max-width: 700px;
   margin: 0 auto;
+  padding: 30px;
 }
 
 .scills {
@@ -501,7 +504,6 @@ p.greeting {
   border-image-slice: 1; */
 
   -webkit-animation-name: animate;
-
           animation-name: animate;
   -webkit-animation-delay: 0;
           animation-delay: 0;
