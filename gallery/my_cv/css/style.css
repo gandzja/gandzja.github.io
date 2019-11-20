@@ -8,6 +8,7 @@ html {
 body {
   background: rgb(143,198,187);
   background: linear-gradient(45deg, rgba(143,198,187,1) 0%, rgba(143,198,187,1) 25%, rgba(134,103,193,1) 25%, rgba(134,103,193,1) 50%, rgba(134,103,193,1) 50%, rgba(134,103,193,1) 75%, rgba(143,198,187,1) 75%, rgba(143,198,187,1) 100%);
+  font-size: 24px;
   font-family: 'EB Garamond', serif;
   line-height: 1.5;
 }
@@ -87,7 +88,8 @@ img {
 }
 .icon {
   fill: currentColor;
-  height: 1rem;
+  width: 16px;
+  height: 16px;
   overflow: visible;
 }
 a {
@@ -156,52 +158,76 @@ h2 {
   border-left: 6px solid #614582;
   padding: 0 0 5px 80px;
 }
+.job-title-container-none {
+  border-left: none;
+}
 .job-company, .institute, .traning-title {
-  margin-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-weight: bold;
   line-height: 1.2em;
 }
 .job-title {
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
-.position-job {
+.job-company_first-child {
+  margin-top: 0;
+}
+.institute_first-child {
+  margin-top: 0;
+}
+.traning-title_first-child {
+  margin-top: 0;
+}
+/* .position-job {
   padding-top: 10px;
+} */
+.data {
+  margin-bottom: 25px;
+}
+.data:last-child {
+  margin-bottom: 0;
 }
 .data-job {
   position: absolute;
   background-color: #614582;
-  width: 127px;
-  height: 127px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   color: #FFFFFF;
   font-weight: bold;
   font-size: 36px;
   text-align: center;
-  line-height: 127px;
-  top: 0px;
-  left: -60px;
+  line-height: 100px;
+  top: -20px;
+  left: -46px;
 }
 
 .icon_hs {
   fill: #58c79a;
-  width: 5rem;
-  margin: 2px;
+  width: 65px;
+  height: 65px;
+  margin: 3px;
 }
 .svg-flex {
   flex-flow: row wrap;
   flex-grow: 1;
   display: flex;
-  -webkit-justify-content: space-around;
-          justify-content: space-around;
+  /* -webkit-justify-content: space-around;
+          justify-content: space-around; */
   align-items: center;
   align-content: space-around;
 }
 
-/* @media (max-width: 1319px) {
-  .data-job {
-    top: 18px;
+@media (min-width: 1350px) {
+  .icon {
+    width: 22px;
+    height: 22px;
   }
-} */
+  .links {
+    font-size: 20px;
+}
+}
 
 @media (max-width:1024px) {
   .wrapper {
@@ -212,7 +238,7 @@ h2 {
     line-height: 32px;
   }
   .header__block-about_me {
-    /* padding-top: 30px; */
+    padding-top: 30px;
   }
   .title:first-child {
     font-size: 18px;
