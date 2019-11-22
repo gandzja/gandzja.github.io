@@ -1369,3 +1369,24 @@ i {
     bottom: 7%;
   }
 }
+@media (max-width: 950px) {
+  .stage {
+    display: none;
+  }
+  .greeting {
+    font-size: 1.6em;
+  }
+  p.greeting {
+    font-size: 20px;
+  }
+  #baloon {
+    display: none;
+  }
+  .scills {
+    display: none;
+  }
+  .forest-cont {
+    font-size: 0.8em;
+    left: 30%;
+}
+}
