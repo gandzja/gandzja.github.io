@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic');
-
+html {
+  width: 100%;
+  max-width: 100%;
+}
 body {
   background: #70d5d0;
   color: #248a87;
@@ -1256,6 +1259,9 @@ i {
 }
 @media (max-width: 425px) {
   #background-wrap {
+    display: none;
+  }
+  #butterfly_blue {
     display: none;
   }
 }
