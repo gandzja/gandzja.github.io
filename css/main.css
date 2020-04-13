@@ -660,6 +660,10 @@ p.greeting {
   background-image: url('../image/batman.png');
 }
 
+.thumb-9 .img-card {
+  background-image: url('../image/DeliveryFood.png');
+}
+
 .text-card {
   opacity: 0.7;
   margin-top: 20px;
@@ -1256,12 +1260,12 @@ i {
     font-size: 0.8em;
     left: 30%;
   }
-}
-@media (max-width: 425px) {
-  #background-wrap {
-    display: none;
-  }
   #butterfly_blue {
     display: none;
   }
+}
+@media (max-width: 425px) {
+  /* #background-wrap {
+    display: none;
+  } */
 }
